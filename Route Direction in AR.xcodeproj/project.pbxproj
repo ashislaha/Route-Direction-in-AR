@@ -62,6 +62,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8013BC291F6BAF44001D3100 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				80620B911F6B767500FBA4B6 /* GPXFile.swift */,
+				80620B901F6B767500FBA4B6 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		8013BC2A1F6BAF77001D3100 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				80620B921F6B767500FBA4B6 /* ReachabilityHelper.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		8013BC2B1F6BAF89001D3100 /* SceneUtility */ = {
+			isa = PBXGroup;
+			children = (
+				80620B8E1F6B767500FBA4B6 /* SceneNodeCreator.swift */,
+			);
+			path = SceneUtility;
+			sourceTree = "<group>";
+		};
+		8013BC2C1F6BAF9A001D3100 /* ARSetup */ = {
+			isa = PBXGroup;
+			children = (
+				80620B8F1F6B767500FBA4B6 /* ARViewController.swift */,
+			);
+			path = ARSetup;
+			sourceTree = "<group>";
+		};
 		80620B651F6B701D00FBA4B6 = {
 			isa = PBXGroup;
 			children = (
@@ -84,15 +117,13 @@
 			isa = PBXGroup;
 			children = (
 				80620BA01F6B777700FBA4B6 /* AppDelegate.swift */,
-				80620B8F1F6B767500FBA4B6 /* ARViewController.swift */,
-				80620B911F6B767500FBA4B6 /* GPXFile.swift */,
-				80620B901F6B767500FBA4B6 /* MapViewController.swift */,
-				80620B921F6B767500FBA4B6 /* ReachabilityHelper.swift */,
-				80620B8E1F6B767500FBA4B6 /* SceneNodeCreator.swift */,
-				80620B981F6B76F800FBA4B6 /* Main.storyboard */,
+				8013BC2A1F6BAF77001D3100 /* Reachability */,
+				8013BC291F6BAF44001D3100 /* Map */,
+				8013BC2C1F6BAF9A001D3100 /* ARSetup */,
+				8013BC2B1F6BAF89001D3100 /* SceneUtility */,
+				80620B851F6B73B200FBA4B6 /* Machine Learning Modules */,
 				80620B991F6B773900FBA4B6 /* View */,
 				80620B7F1F6B701D00FBA4B6 /* Info.plist */,
-				80620B851F6B73B200FBA4B6 /* Machine Learning Modules */,
 			);
 			path = "Route Direction in AR";
 			sourceTree = "<group>";
@@ -111,6 +142,7 @@
 		80620B991F6B773900FBA4B6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				80620B981F6B76F800FBA4B6 /* Main.storyboard */,
 				80620B9A1F6B773900FBA4B6 /* art.scnassets */,
 				80620B9B1F6B773900FBA4B6 /* Assets.xcassets */,
 				80620B9C1F6B773900FBA4B6 /* LaunchScreen.storyboard */,
