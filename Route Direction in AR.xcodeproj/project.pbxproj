@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49EF63EE426E1FE32DD4F83D /* libPods-Route Direction in AR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0479A73B3283A194CE27E18A /* libPods-Route Direction in AR.a */; };
+		8013BC241F6B956C001D3100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80620B9B1F6B773900FBA4B6 /* Assets.xcassets */; };
+		8013BC251F6B9570001D3100 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 80620B9A1F6B773900FBA4B6 /* art.scnassets */; };
+		8013BC261F6B9577001D3100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80620B9C1F6B773900FBA4B6 /* LaunchScreen.storyboard */; };
+		8013BC271F6B9579001D3100 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 80620B9E1F6B773900FBA4B6 /* beep.mp3 */; };
+		8013BC281F6B957C001D3100 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 80620B9F1F6B773900FBA4B6 /* beep.wav */; };
+		80620B8A1F6B73C400FBA4B6 /* car_detection_keras_DNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 80620B871F6B73B200FBA4B6 /* car_detection_keras_DNN.mlmodel */; };
+		80620B8B1F6B73C800FBA4B6 /* car_detection_keras_CNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 80620B861F6B73B200FBA4B6 /* car_detection_keras_CNN.mlmodel */; };
+		80620B8C1F6B743F00FBA4B6 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80620B881F6B73B200FBA4B6 /* Classification.swift */; };
+		80620B8D1F6B744300FBA4B6 /* ImagePreProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80620B891F6B73B200FBA4B6 /* ImagePreProcessing.swift */; };
+		80620B931F6B767500FBA4B6 /* SceneNodeCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80620B8E1F6B767500FBA4B6 /* SceneNodeCreator.swift */; };
+		80620B941F6B767500FBA4B6 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80620B8F1F6B767500FBA4B6 /* ARViewController.swift */; };
+		80620B951F6B767500FBA4B6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80620B901F6B767500FBA4B6 /* MapViewController.swift */; };
+		80620B961F6B767500FBA4B6 /* GPXFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80620B911F6B767500FBA4B6 /* GPXFile.swift */; };
+		80620B971F6B767500FBA4B6 /* ReachabilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80620B921F6B767500FBA4B6 /* ReachabilityHelper.swift */; };
+		80620BA11F6B777700FBA4B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80620BA01F6B777700FBA4B6 /* AppDelegate.swift */; };
+		80E48B601F6B79F400A03FD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80620B981F6B76F800FBA4B6 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0479A73B3283A194CE27E18A /* libPods-Route Direction in AR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Route Direction in AR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80620B6E1F6B701D00FBA4B6 /* Route Direction in AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Route Direction in AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80620B7F1F6B701D00FBA4B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80620B861F6B73B200FBA4B6 /* car_detection_keras_CNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = car_detection_keras_CNN.mlmodel; sourceTree = "<group>"; };
+		80620B871F6B73B200FBA4B6 /* car_detection_keras_DNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = car_detection_keras_DNN.mlmodel; sourceTree = "<group>"; };
+		80620B881F6B73B200FBA4B6 /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		80620B891F6B73B200FBA4B6 /* ImagePreProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreProcessing.swift; sourceTree = "<group>"; };
+		80620B8E1F6B767500FBA4B6 /* SceneNodeCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneNodeCreator.swift; sourceTree = "<group>"; };
+		80620B8F1F6B767500FBA4B6 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		80620B901F6B767500FBA4B6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		80620B911F6B767500FBA4B6 /* GPXFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXFile.swift; sourceTree = "<group>"; };
+		80620B921F6B767500FBA4B6 /* ReachabilityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityHelper.swift; sourceTree = "<group>"; };
+		80620B981F6B76F800FBA4B6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		80620B9A1F6B773900FBA4B6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		80620B9B1F6B773900FBA4B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80620B9D1F6B773900FBA4B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80620B9E1F6B773900FBA4B6 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		80620B9F1F6B773900FBA4B6 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		80620BA01F6B777700FBA4B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BC613AA72F802442E88176E /* Pods-Route Direction in AR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Route Direction in AR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Route Direction in AR/Pods-Route Direction in AR.debug.xcconfig"; sourceTree = "<group>"; };
+		A2AED1672E4E211C0FF1E210 /* Pods-Route Direction in AR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Route Direction in AR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Route Direction in AR/Pods-Route Direction in AR.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80620B6B1F6B701D00FBA4B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EF63EE426E1FE32DD4F83D /* libPods-Route Direction in AR.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80620B651F6B701D00FBA4B6 = {
+			isa = PBXGroup;
+			children = (
+				80620B701F6B701D00FBA4B6 /* Route Direction in AR */,
+				80620B6F1F6B701D00FBA4B6 /* Products */,
+				ECA243177F3B4E8A630FF179 /* Pods */,
+				D62D417E30A682B0554E2EA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		80620B6F1F6B701D00FBA4B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80620B6E1F6B701D00FBA4B6 /* Route Direction in AR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80620B701F6B701D00FBA4B6 /* Route Direction in AR */ = {
+			isa = PBXGroup;
+			children = (
+				80620BA01F6B777700FBA4B6 /* AppDelegate.swift */,
+				80620B8F1F6B767500FBA4B6 /* ARViewController.swift */,
+				80620B911F6B767500FBA4B6 /* GPXFile.swift */,
+				80620B901F6B767500FBA4B6 /* MapViewController.swift */,
+				80620B921F6B767500FBA4B6 /* ReachabilityHelper.swift */,
+				80620B8E1F6B767500FBA4B6 /* SceneNodeCreator.swift */,
+				80620B981F6B76F800FBA4B6 /* Main.storyboard */,
+				80620B991F6B773900FBA4B6 /* View */,
+				80620B7F1F6B701D00FBA4B6 /* Info.plist */,
+				80620B851F6B73B200FBA4B6 /* Machine Learning Modules */,
+			);
+			path = "Route Direction in AR";
+			sourceTree = "<group>";
+		};
+		80620B851F6B73B200FBA4B6 /* Machine Learning Modules */ = {
+			isa = PBXGroup;
+			children = (
+				80620B861F6B73B200FBA4B6 /* car_detection_keras_CNN.mlmodel */,
+				80620B871F6B73B200FBA4B6 /* car_detection_keras_DNN.mlmodel */,
+				80620B881F6B73B200FBA4B6 /* Classification.swift */,
+				80620B891F6B73B200FBA4B6 /* ImagePreProcessing.swift */,
+			);
+			path = "Machine Learning Modules";
+			sourceTree = "<group>";
+		};
+		80620B991F6B773900FBA4B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80620B9A1F6B773900FBA4B6 /* art.scnassets */,
+				80620B9B1F6B773900FBA4B6 /* Assets.xcassets */,
+				80620B9C1F6B773900FBA4B6 /* LaunchScreen.storyboard */,
+				80620B9E1F6B773900FBA4B6 /* beep.mp3 */,
+				80620B9F1F6B773900FBA4B6 /* beep.wav */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D62D417E30A682B0554E2EA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0479A73B3283A194CE27E18A /* libPods-Route Direction in AR.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECA243177F3B4E8A630FF179 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BC613AA72F802442E88176E /* Pods-Route Direction in AR.debug.xcconfig */,
+				A2AED1672E4E211C0FF1E210 /* Pods-Route Direction in AR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80620B6D1F6B701D00FBA4B6 /* Route Direction in AR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80620B821F6B701D00FBA4B6 /* Build configuration list for PBXNativeTarget "Route Direction in AR" */;
+			buildPhases = (
+				A0FDFA160E332E56F7E4CE4F /* [CP] Check Pods Manifest.lock */,
+				80620B6A1F6B701D00FBA4B6 /* Sources */,
+				80620B6B1F6B701D00FBA4B6 /* Frameworks */,
+				80620B6C1F6B701D00FBA4B6 /* Resources */,
+				D08C5FA6E24D1D48D09BC116 /* [CP] Embed Pods Frameworks */,
+				08F8FA99D132D54BCBB56936 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Route Direction in AR";
+			productName = "Route Direction in AR";
+			productReference = 80620B6E1F6B701D00FBA4B6 /* Route Direction in AR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80620B661F6B701D00FBA4B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Ashis Laha";
+				TargetAttributes = {
+					80620B6D1F6B701D00FBA4B6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 80620B691F6B701D00FBA4B6 /* Build configuration list for PBXProject "Route Direction in AR" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80620B651F6B701D00FBA4B6;
+			productRefGroup = 80620B6F1F6B701D00FBA4B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80620B6D1F6B701D00FBA4B6 /* Route Direction in AR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80620B6C1F6B701D00FBA4B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8013BC281F6B957C001D3100 /* beep.wav in Resources */,
+				8013BC241F6B956C001D3100 /* Assets.xcassets in Resources */,
+				8013BC271F6B9579001D3100 /* beep.mp3 in Resources */,
+				8013BC261F6B9577001D3100 /* LaunchScreen.storyboard in Resources */,
+				8013BC251F6B9570001D3100 /* art.scnassets in Resources */,
+				80E48B601F6B79F400A03FD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08F8FA99D132D54BCBB56936 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Route Direction in AR/Pods-Route Direction in AR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0FDFA160E332E56F7E4CE4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D08C5FA6E24D1D48D09BC116 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Route Direction in AR/Pods-Route Direction in AR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80620B6A1F6B701D00FBA4B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80620B8A1F6B73C400FBA4B6 /* car_detection_keras_DNN.mlmodel in Sources */,
+				80620B971F6B767500FBA4B6 /* ReachabilityHelper.swift in Sources */,
+				80620B8D1F6B744300FBA4B6 /* ImagePreProcessing.swift in Sources */,
+				80620B941F6B767500FBA4B6 /* ARViewController.swift in Sources */,
+				80620B951F6B767500FBA4B6 /* MapViewController.swift in Sources */,
+				80620B961F6B767500FBA4B6 /* GPXFile.swift in Sources */,
+				80620B8B1F6B73C800FBA4B6 /* car_detection_keras_CNN.mlmodel in Sources */,
+				80620B8C1F6B743F00FBA4B6 /* Classification.swift in Sources */,
+				80620BA11F6B777700FBA4B6 /* AppDelegate.swift in Sources */,
+				80620B931F6B767500FBA4B6 /* SceneNodeCreator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80620B9C1F6B773900FBA4B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80620B9D1F6B773900FBA4B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80620B801F6B701D00FBA4B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80620B811F6B701D00FBA4B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80620B831F6B701D00FBA4B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BC613AA72F802442E88176E /* Pods-Route Direction in AR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3Z9URG96M;
+				INFOPLIST_FILE = "Route Direction in AR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ALaha.RouteDirectionInAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80620B841F6B701D00FBA4B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2AED1672E4E211C0FF1E210 /* Pods-Route Direction in AR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3Z9URG96M;
+				INFOPLIST_FILE = "Route Direction in AR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ALaha.RouteDirectionInAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80620B691F6B701D00FBA4B6 /* Build configuration list for PBXProject "Route Direction in AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80620B801F6B701D00FBA4B6 /* Debug */,
+				80620B811F6B701D00FBA4B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80620B821F6B701D00FBA4B6 /* Build configuration list for PBXNativeTarget "Route Direction in AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80620B831F6B701D00FBA4B6 /* Debug */,
+				80620B841F6B701D00FBA4B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80620B661F6B701D00FBA4B6 /* Project object */;
+}

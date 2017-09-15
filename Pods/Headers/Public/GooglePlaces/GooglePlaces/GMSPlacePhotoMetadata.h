@@ -1,0 +1,1 @@
+../../../../GooglePlaces/Frameworks/GooglePlaces.framework/Headers/GMSPlacePhotoMetadata.h

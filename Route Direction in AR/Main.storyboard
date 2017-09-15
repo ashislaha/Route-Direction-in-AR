@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ydE-qM-X29">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="M8l-L7-m5P">
+            <objects>
+                <viewController id="Khz-Y8-HVS" customClass="MapViewController" customModule="Route_Direction_in_AR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xiu-iE-0xD"/>
+                        <viewControllerLayoutGuide type="bottom" id="3fR-sV-tNx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BMd-Sc-5x2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hKZ-jf-py2">
+                                <rect key="frame" x="8" y="64" width="359" height="583"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Khz-Y8-HVS" id="ghP-HM-281"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hKZ-jf-py2" firstAttribute="leading" secondItem="BMd-Sc-5x2" secondAttribute="leading" constant="8" id="DZr-UO-Suv"/>
+                            <constraint firstItem="3fR-sV-tNx" firstAttribute="top" secondItem="hKZ-jf-py2" secondAttribute="bottom" constant="20" id="H7a-AQ-3l4"/>
+                            <constraint firstItem="hKZ-jf-py2" firstAttribute="top" secondItem="Xiu-iE-0xD" secondAttribute="bottom" id="XKT-Qy-ISA"/>
+                            <constraint firstAttribute="trailing" secondItem="hKZ-jf-py2" secondAttribute="trailing" constant="8" id="d2g-IE-taZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="h8M-Sc-3ej">
+                        <barButtonItem key="leftBarButtonItem" title="Clean Map" id="pDJ-ym-bWI">
+                            <connections>
+                                <action selector="clearGoogleMap:" destination="Khz-Y8-HVS" id="irf-32-I8t"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="ARView" id="Sh2-x8-5iB">
+                            <connections>
+                                <action selector="openARView:" destination="Khz-Y8-HVS" id="gdr-o5-iip"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="appleMap" destination="hKZ-jf-py2" id="ueo-sm-vRF"/>
+                        <outlet property="googleMapCleanOutlet" destination="pDJ-ym-bWI" id="txb-P8-Vno"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pkV-FV-yDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194" y="-2909"/>
+        </scene>
+        <!--ARViewController-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" userLabel="ARViewController" customClass="ARViewController" customModule="Route_Direction_in_AR" sceneMemberID="viewController">
+                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Hde-wO-ZX2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </arscnView>
+                    <navigationItem key="navigationItem" id="SmF-Rq-nJH">
+                        <barButtonItem key="rightBarButtonItem" title="Dismiss" id="sJ8-wj-kqj">
+                            <connections>
+                                <action selector="dismiss:" destination="BV1-FR-VrT" id="tDD-sm-oQ9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sceneView" destination="Hde-wO-ZX2" id="jeq-bT-t83"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274" y="-2911"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IVh-b3-ooa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ydE-qM-X29" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cyg-mc-MyF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Khz-Y8-HVS" kind="relationship" relationship="rootViewController" id="xyu-Qf-t2q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyO-bI-QyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1039" y="-2910"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XkN-1P-hiZ">
+            <objects>
+                <navigationController storyboardIdentifier="ARViewController" automaticallyAdjustsScrollViewInsets="NO" id="i9l-qK-LiR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HCg-20-1MS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="rootViewController" id="ZZe-a3-QYF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2iv-f6-iNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="-2910"/>
+        </scene>
+    </scenes>
+</document>
