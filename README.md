@@ -13,3 +13,5 @@ Also added "Reachability" for finding path in Google map.
 -- In ARFrame generates capturedImage which is the input to .mlmodel for detecting that car is present in the image or not.
 
 -- This project combines both ARKit & CoreML.
+
+Please check https://github.com/ashislaha/Learn-iOS/tree/master/10.%20Direction%20in%20ARKit/Explore%20Direction which is more advanced in calculating the path & mapping the (lat,lng) in real world co-ordinate system.
